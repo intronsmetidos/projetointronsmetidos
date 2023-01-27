@@ -75,9 +75,7 @@ img{
 
 /*Parte do menu*/
 .navbar{
-    position: absolute;
-    display: flex;
-    width: 100%;
+    
     justify-content: space-between;
     padding: 10px;
     color: whitesmoke;
