@@ -124,6 +124,7 @@ header{
 }
 header a{
     flex-direction: column;
+    
  
 }
 header h1, header h3{
@@ -132,8 +133,7 @@ header h1, header h3{
  
 .nav-links{
     display: flex;
-    text-align: center;
-    
+    align-items: center;
 }
  
 .nav-links li{
@@ -166,11 +166,12 @@ header h1, header h3{
     margin-bottom: 30px;
 }
  
-.ctn{
-    padding: 10px 19px;
+.ctn2{
+    padding: 10px 15px;
     background: #b82207;
     border-radius: 30px;
     color:antiquewhite;
+    font-size:18px;
 }
  
 .menu-btn{
