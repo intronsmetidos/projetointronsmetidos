@@ -45,6 +45,7 @@ img{
   font-size: 15px;
   color: #fff;
   width:100%;
+   margin:30px;
   text-align:justify;
 }
 .main-movie{
@@ -131,8 +132,8 @@ header h1, header h3{
  
 .nav-links{
     display: flex;
-    align-items: center;
-    width:100%;
+    text-align: center;
+    
 }
  
 .nav-links li{
