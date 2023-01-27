@@ -6,7 +6,7 @@
 }
 
 body{
-    background-image: linear-gradient(to right, #d4145a, #fbb03b);
+    background: linear-gradient(to right, #d4145a, #fbb03b);
     color: #fff;
     font-family: 'Gill Sans', 'Gill Sans MT';
     max-width: 100%;
