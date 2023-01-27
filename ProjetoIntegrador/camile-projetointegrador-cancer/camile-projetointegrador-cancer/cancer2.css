@@ -411,7 +411,7 @@ section{
   .color_pele2{
     background-color: var(--color_pele2);
   }
-#flex{
+#flex {
     display:flex;
-    width:100%;
+   
 }
