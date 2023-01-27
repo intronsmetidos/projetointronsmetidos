@@ -17,11 +17,11 @@
   }
 
   .nav-links{
-      flex-direction: row-reverse;
-      width: 100%;
+      flex-direction:column;
+      width: 100vw;
       height: 100vh;
       justify-content: center;
-      margin-top: -900px;
+      margin-top: 0 auto;
       transition: all 0.5 ease;
   }
   .mobile-menu{
