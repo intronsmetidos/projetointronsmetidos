@@ -21,6 +21,9 @@ p{
 }
 ul{
     list-style: none;
+    display:flex;
+    padding:15px;
+    font-size:20px;
 }
 
 img{
