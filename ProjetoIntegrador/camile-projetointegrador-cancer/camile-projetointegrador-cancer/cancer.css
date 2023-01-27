@@ -1,4 +1,4 @@
-@media only screen and (max-width:100%){
+@media only screen and (width:100%){
   .menu-btn{
      display: block;
   }
@@ -18,10 +18,10 @@
 
   .nav-links{
       flex-direction: column;
-      width: 100%;
+      width: 50%;
       height: 100vh;
       justify-content: center;
-      margin-top: -900px;
+      margin-top: 50px;
       transition: all 0.5 ease;
   }
   .mobile-menu{
@@ -54,14 +54,14 @@
 }
 
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 70٪){
   header .container{
     display: flex;
     flex-direction: column;
   }
 }
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 100%){
   .description{
     width: 50%;
   }
