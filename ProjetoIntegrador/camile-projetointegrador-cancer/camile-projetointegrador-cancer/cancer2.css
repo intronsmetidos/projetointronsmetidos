@@ -48,7 +48,7 @@ img{
   text-align:justify;
 }
 .main-movie{
-    background: linear-gradient(rgba(30, 18, 4, 0.479), rgba(30, 17, 4, 0.30));
+    background-image: linear-gradient(rgba(30, 18, 4, 0.479), rgba(30, 17, 4, 0.30));
     border-radius:2px;
     padding:20px;
     margin-bottom:20px;
@@ -103,7 +103,7 @@ img{
 }
  
 .caixa{
-     background: linear-gradient(rgba(30, 18, 4, 0.479), rgba(30, 17, 4, 0.30));
+     background-image: linear-gradient(rgba(30, 18, 4, 0.479), rgba(30, 17, 4, 0.30));
       border-radius:2px;
       padding:20px;
       margin-bottom:20px;
