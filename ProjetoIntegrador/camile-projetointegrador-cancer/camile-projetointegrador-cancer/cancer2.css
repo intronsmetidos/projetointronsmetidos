@@ -19,7 +19,7 @@ p{
     text-align: justify;
     font-size:1.1em;
 }
-ul{
+ul li{
     list-style: none;
     display:flex;
     padding:15px;
