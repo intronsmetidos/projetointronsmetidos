@@ -6,7 +6,7 @@
 }
 
 body{
-    background-image: linear-gradient( #d4145a, #fbb03b);
+    background-image: linear-gradient(to right, #d4145a, #fbb03b);
     color: #fff;
     font-family: 'Gill Sans', 'Gill Sans MT';
     width: 100%;
