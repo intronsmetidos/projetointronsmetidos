@@ -127,11 +127,12 @@ header h1, header h3{
  
 .nav-links{
     display: flex;
+    width:70%;
     align-items: center;
 }
  
 .nav-links li{
-    margin: 0 30px;
+    margin:30px;
 }
  
 .header-content{
