@@ -122,9 +122,8 @@ header{
     text-decoration: none;
 }
 header a{
-    flex-direction: ;
-  
-
+    flex-direction: column;
+ 
 }
 header h1, header h3{
     color: #fff;
