@@ -92,7 +92,8 @@ img{
 }
  
 #logo{
-  justify-content: space-between;
+ 
+   text-align:center;
     height: 100px;
     width: 260px;
     top: 0;
