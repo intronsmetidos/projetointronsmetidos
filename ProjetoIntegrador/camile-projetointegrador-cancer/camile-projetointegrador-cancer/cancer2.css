@@ -121,15 +121,17 @@ header h1, header h3{
     color: #fff;
 }
  
-.nav-links{
-    display: flex;
-    width:70%;
-    align-items: center;
+header .container2 {
+  display: flex;
+  flex-direction: row;
+
+  /* coloca o menu ao lado da logo */
+  align-items: center;
+  /* alinhando o menu ao centro do container */
+  justify-content: space-between;
+  /* adicionando um espaço entre o menu e a logo */
 }
- 
-.nav-links li{
-    margin:10px;
-}
+
  
 .header-content{
     text-decoration: none;
