@@ -116,6 +116,7 @@ header{
     height: 100%;
     background-image: linear-gradient(rgba(30, 18, 4, 0.479), rgba(30, 17, 4, 0.39)), url("./imagens/fundo.jpg");
     background-position: bottom;
+    align-items:flex-end;
     background-size: cover;
     display: flex;
     justify-content: center;
