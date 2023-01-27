@@ -16,9 +16,8 @@ ul {
   padding: 0px;
 }
 header{
-  position:fixed;
+  position:relative;
   width:100%;
-  z-index:4;
 }
 header a {
   color: whitesmoke;
@@ -38,8 +37,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: linear-gradient(to right, CornflowerBlue, SlateBlue,DarkSlateBlue);
-}
+  background: linear-gradient(to right, #d4145a, #fbb03b);
 
 #menu {
   display: flex;
@@ -59,11 +57,11 @@ a:hover {
 @media (max-width: 600px) {
   #menu {
     display: block;
-    position: absolute;
+    position: relative;
     width: 100%;
     top: 70px;
     right: 0px;
-    background: linear-gradient(to right, CornflowerBlue, SlateBlue,DarkSlateBlue);
+background: linear-gradient(to right, #d4145a, #fbb03b);
     transition: 0.6s;
     height: 0px;
     visibility: hidden;
