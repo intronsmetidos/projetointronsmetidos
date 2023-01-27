@@ -83,7 +83,8 @@ img{
 .navbar a {
     margin: 20px;
     color: whitesmoke; 
-    flex-direction: row;
+    flex-direction: column;
+    display:flex;
 }
  
 #logo{
