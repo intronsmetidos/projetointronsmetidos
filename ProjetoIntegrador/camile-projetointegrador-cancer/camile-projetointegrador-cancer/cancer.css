@@ -1,4 +1,4 @@
-@media only screen and (width:100%){
+@media only screen and (max-width:100%){
   .menu-btn{
      display: block;
   }
@@ -61,7 +61,7 @@
   }
 }
 
-@media screen and (min-width: 100%){
+@media screen and (min-width: 1024px){
   .description{
     width: 50%;
   }
