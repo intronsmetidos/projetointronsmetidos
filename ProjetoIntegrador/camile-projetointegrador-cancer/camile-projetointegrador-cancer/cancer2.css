@@ -9,7 +9,7 @@ body{
     color: #fff;
     font-family: 'Gill Sans', 'Gill Sans MT';
     width: 100%;
-    margin:0;
+    padding:0;
   }
  @media screen and (min-width: 1030px) { .description { width: 50%; }}
 a{
@@ -47,6 +47,7 @@ img{
 #ref{
   font-size: 15px;
   color: #fff;
+    width:80%;
 }
 
 .main-movie {
@@ -97,8 +98,8 @@ img{
 #logo{
  
    text-align:left;
-    height: 100px;
-    width: 260px;
+    height: 10%;
+    width: 26%;
     top: 0;
     left: 0;
 }
@@ -114,7 +115,7 @@ img{
 header{
     top:0;
     left:0; 
-    margin: 0 auto 
+    margin: 0 auto ;
     width: 100%;
     height: 40vh;
     background-image: linear-gradient(rgba(30, 18, 4, 0.479), rgba(30, 17, 4, 0.39)), url("./imagens/fundo.jpg");
