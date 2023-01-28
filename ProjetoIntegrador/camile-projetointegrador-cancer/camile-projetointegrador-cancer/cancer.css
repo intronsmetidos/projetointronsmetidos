@@ -57,7 +57,7 @@
 @media screen and (max-width: 700px){
   header .container{
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
   }
 }
 
