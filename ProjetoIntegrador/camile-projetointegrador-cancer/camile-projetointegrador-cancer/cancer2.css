@@ -124,6 +124,7 @@ header{
 }
 header a{
     flex-direction: column;
+    margin:25x;
 }
 header h1, header h3{
     color: #fff;
@@ -146,8 +147,7 @@ header h1, header h3{
     list-style: none;
     
  }
-.header-content a{
-    width:100%;}
+
 .header-content h1{
     font-size: 6vmin;
 }
