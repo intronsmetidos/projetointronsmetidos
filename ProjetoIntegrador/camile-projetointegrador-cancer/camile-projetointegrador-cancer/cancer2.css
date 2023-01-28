@@ -21,6 +21,7 @@ p{
 }
 ul li{
     list-style: none;
+    flex-direction:row;
     display:flex;
     padding:5px;
     font-size:20px;
@@ -83,7 +84,7 @@ img{
     justify-content: space-between;
     padding: 5px;
     color: whitesmoke;
-        display:flex;
+    display:flex;
 
 }
 .navbar a {
