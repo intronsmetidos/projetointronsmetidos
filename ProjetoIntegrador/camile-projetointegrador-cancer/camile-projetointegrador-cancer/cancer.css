@@ -5,6 +5,8 @@
   .navbar{
       padding: 0;
   }
+  #header{
+    width:100%;}
   .logo{
       top: 50px;
       left: 30px;
