@@ -16,7 +16,8 @@
     font-size: 7vmin;
   }
 #ref{
-  width:89%;
+  margin:5%;
+  width:8%;
   }
   .nav-links{
       flex-direction: column;
