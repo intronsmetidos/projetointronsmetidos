@@ -15,7 +15,9 @@
   .header-content h1{
     font-size: 7vmin;
   }
-
+#ref{
+  width:89%;
+  }
   .nav-links{
       flex-direction: column;
       width: 100%;
