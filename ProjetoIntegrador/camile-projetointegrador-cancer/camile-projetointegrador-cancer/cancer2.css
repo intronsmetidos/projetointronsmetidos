@@ -19,6 +19,7 @@ a{
 p{
     text-align: justify;
     font-size:1.1em;
+    color: whitesmoke;
 }
 ul{
     list-style: none;
@@ -141,7 +142,7 @@ header h1, header h3{
  
 .header-content{
     text-decoration: none;
-    margin-bottom: 250px;
+    margin-bottom: 150px;
     color:antiquewhite;
     text-align: center;
     list-style: none;
