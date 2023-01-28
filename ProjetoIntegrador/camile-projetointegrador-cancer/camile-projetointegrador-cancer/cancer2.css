@@ -1,0 +1,410 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+body{
+    background-image: linear-gradient(to right, #d4145a, #fbb03b);
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT';
+    max-width: 100%;
+  }
+ 
+a{
+    text-decoration: none;
+}
+
+p{
+    text-align: justify;
+    font-size:1.1em;
+}
+ul{
+    list-style: none;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;  
+}
+
+#frase{
+  font-size: 30px;
+  color: #b82207;
+}
+
+#hr{
+  color: #fff;
+}
+
+#ref{
+  font-size: 15px;
+  color: #fff;
+}
+
+.main-movie {
+    background-image: linear-gradient(rgba(30, 18, 4, 0.479), rgba(30, 17, 4, 0.30));
+    border-radius:2px;
+    padding:20px;
+    margin-bottom:20px;
+    overflow:hidden;
+    font-size: 20px;
+    
+  }
+
+.main-movie .description {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    max-width: 100%;
+    text-align: justify;
+}
+.container {
+    margin-left: 30px;
+}
+
+
+
+
+/*inicio*/
+.topico{
+    color: #676f77;
+    font-size: 20px;
+    
+}
+
+/*Parte do menu*/
+.navbar{
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: whitesmoke;
+}
+.navbar a {
+    margin: 20px;
+    color: whitesmoke; 
+    flex-direction: row;
+}
+ 
+#logo{
+  justify-content: space-between;
+    height: 100px;
+    width: 260px;
+    top: 0;
+    left: 0;
+}
+ 
+.caixa{
+     background-image: linear-gradient(rgba(30, 18, 4, 0.479), rgba(30, 17, 4, 0.30));
+      border-radius:2px;
+      padding:20px;
+      margin-bottom:20px;
+      overflow:hidden;
+  }
+ 
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgba(30, 18, 4, 0.479), rgba(30, 17, 4, 0.39)), url("./imagens/fundo.jpg");
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-decoration: none;
+}
+header a{
+    flex-direction: column;
+}
+header h1, header h3{
+    color: #fff;
+}
+ 
+.nav-links{
+    display: flex;
+    align-items: center;
+}
+ 
+.nav-links li{
+    margin: 0 30px;
+}
+ 
+.header-content{
+    text-decoration: none;
+    margin-bottom: 150px;
+    color:antiquewhite;
+    text-align: center;
+  
+}
+ 
+.header-content h1{
+    font-size: 6vmin;
+}
+ 
+.line{
+    width: 150px;
+    height: 4px;
+    background: #b82207;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+ 
+.header-content h3{
+    font-size: 4vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+ 
+.ctn{
+    padding: 10px 19px;
+    background: #b82207;
+    border-radius: 30px;
+    color:antiquewhite;
+}
+ 
+.menu-btn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;  
+}
+
+/*Introdução*/
+section{
+  width: 80%;
+  margin: 80px auto;
+}
+
+.title{
+  text-align: center;
+  font-size: 3vmin;
+}
+
+
+/*Imagem sobre a definição*/
+.imagem1{
+    justify-content: center;
+    width: 440px;
+    height: 290px;
+}
+
+
+
+/*Última parte*/
+
+#if{
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+}
+
+.titulos{
+    padding:15px;
+    text-align:center;
+    font-size:15px;
+    color:#fafcff;
+  }
+
+ 
+  /*GRÁFICOS*/
+
+:root{
+    --color_prostata: #3b5998;
+    --color_cr: #00acce;
+    --color_tbp: #2e4741;
+    --color_est: #c8232c;
+    --color_co:#b4c723;
+    --color_esofago:#077814;
+    --color_bexiga:#c523c7;
+    --color_laringe:#4723c7;
+    --color_leucemia:#e49611;
+    --color_snc:#23a7c7;
+    --color_pele:#48db65;
+}
+
+.title_grafico{
+    margin-top: 100px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri;
+}
+  
+.container_grafico{
+    width: 700px;
+    height: 550px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+
+}
+  
+.grafico{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-image: conic-gradient(var(--color_prostata) 29.2%, 
+                                     var(--color_cr) 29.2% 38.3%,
+                                     var(--color_tbp) 38.3% 46.2%,
+                                     var(--color_est) 46.2% 52.1%,
+                                     var(--color_co) 52.1% 57.1%,
+                                     var(--color_esofago) 57.1% 61%,
+                                     var(--color_bexiga) 61% 64.4%,
+                                     var(--color_laringe) 64.4% 67.3%,
+                                     var(--color_leucemia) 67.3% 70%,
+                                     var(--color_snc) 70% 72.6%,
+                                     var(--color_pele) 72.6%
+                                    );
+    box-shadow: 1px 1px 5px 1px rgb(70, 70, 70);
+  }
+  
+  .legenda_toda{
+    margin-top: -3px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  [class^="color_"]{
+    width: 15px;
+    height: 15px;
+    background-color: var(--color_prostata);
+    margin-right: 8px;
+    border-radius: 3px;
+  }
+  
+  .color_cr{
+    background-color: var(--color_cr);
+  }
+  
+  .color_tbp{
+    background-color: var(--color_tbp);
+  }
+  
+  .color_est{
+    background-color: var(--color_est);
+  }
+  
+  .color_co{
+    background-color: var(--color_co);
+  }
+  
+  .color_esofago{
+    background-color: var(--color_esofago);
+  }
+  
+  .color_bexiga{
+    background-color: var(--color_bexiga);
+  }
+  
+  .color_laringe{
+    background-color: var(--color_laringe);
+  }
+  
+  .color_leucemia{
+    background-color: var(--color_leucemia);
+  }
+  
+  .color_snc{
+    background-color: var(--color_snc);
+  }
+  
+  .color_pele{
+    background-color: var(--color_pele);
+  }
+  
+  .leg{
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri;
+  }
+
+  :root{
+    --color_mama: #f48add;
+    --color_cr2: #1eca1c;
+    --color_coloutero: #7269f7;
+    --color_tbp2: #47e1d7;
+    --color_tireoide:#ffd60a;
+    --color_estomago:#c8232c;
+    --color_ovario:#105b06;
+    --color_corpoutero:#6f328f;
+    --color_linf:#1134e4;
+    --color_snc2:#fa7900;
+    --color_pele2:#701a1a;
+  }
+  
+  
+  .grafico2{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-image: conic-gradient(var(--color_mama) 29.7%, 
+                                    var(--color_cr2) 29.7% 38.9%,
+                                    var(--color_coloutero) 38.9% 46.4%,
+                                    var(--color_tbp2) 46.4% 52%,
+                                    var(--color_tireoide) 52% 57.4%,
+                                    var(--color_estomago) 57.4% 60.9%,
+                                    var(--color_ovario) 60.9% 63.9%,
+                                    var(--color_corpoutero) 63.9% 66.8%,
+                                    var(--color_linf) 66.8% 69.2%,
+                                    var(--color_snc2) 69.2% 71.5%,
+                                    var(--color_pele2) 71.5%);
+    box-shadow: 1px 1px 5px 1px  rgb(70, 70, 70);
+  }
+  [class^="color_"]{
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
+    border-radius: 3px;
+  }
+  .color_mama{
+    background-color: var(--color_mama);
+  }
+  
+  .color_cr2{
+    background-color: var(--color_cr2);
+  }
+  
+  .color_coloutero{
+    background-color: var(--color_coloutero);
+  }
+  
+  .color_tbp2{
+    background-color: var(--color_tbp2);
+  }
+  
+  .color_tireoide{
+    background-color: var(--color_tireoide);
+  }
+  
+  .color_estomago{
+    background-color: var(--color_estomago);
+  }
+  
+  .color_ovario{
+    background-color: var(--color_ovario);
+  }
+  
+  .color_corpoutero{
+    background-color: var(--color_corpoutero);
+  }
+  
+  .color_linf{
+    background-color: var(--color_linf);
+  }
+  
+  .color_snc2{
+    background-color: var(--color_snc2);
+  }
+  
+  .color_pele2{
+    background-color: var(--color_pele2);
+  }
