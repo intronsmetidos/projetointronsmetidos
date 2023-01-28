@@ -40,14 +40,14 @@ width:100%;
   }
 
   .container_grafico{
-    flex-direction: column;
+    
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
     
   }
   .leg{
-    flex-direction: column;
+  
     color: #fff;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri;
     font-size: 17px; 
@@ -61,7 +61,7 @@ width:100%;
   header .container{
     display: flex;
 width:100%;
-    flex-direction: column;
+   
   }
 
 @media screen and (min-width: 1024px){
