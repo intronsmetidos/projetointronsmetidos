@@ -19,7 +19,7 @@ width:100%;
   }
 
   .nav-links{
-      flex-direction: column;
+   
       width: 40%;
       height: 100vh;
       justify-content: center;
@@ -56,12 +56,13 @@ width:100%;
 }
 
 
-@media screen and (max-width: 100٪){
+
+  
   header .container{
     display: flex;
+width:100%;
     flex-direction: column;
   }
-}
 
 @media screen and (min-width: 1024px){
   .description{
@@ -70,9 +71,7 @@ width:100%;
   *{
     box-sizing: border-box;
   }
-  body {
-      margin: 0
-    }
+ 
 
     img {
       vertical-align: middle;
