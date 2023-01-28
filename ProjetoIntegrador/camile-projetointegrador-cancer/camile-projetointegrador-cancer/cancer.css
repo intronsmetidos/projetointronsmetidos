@@ -57,7 +57,7 @@
 }
 
 
-@media screen and (max-width: 850px){
+@media screen and (min-width: 500px){
   header .container{
     display: flex;
     flex-direction: column;
