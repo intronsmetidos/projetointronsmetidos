@@ -96,8 +96,7 @@ img{
 }
  
 #logo{
- 
-   text-align:left;
+    margin-left:30px;
     height: 10%;
     width: 26%;
     top: 0;
