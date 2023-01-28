@@ -2,14 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    max-width: 100%;
+    width: 100%;
 }
 
 body{
     background-image: linear-gradient(to right, #d4145a, #fbb03b);
     color:#fff;
     font-family: 'Gill Sans', 'Gill Sans MT';
-    max-width: 100%;
+    width: 100%;
   }
  
 a{
