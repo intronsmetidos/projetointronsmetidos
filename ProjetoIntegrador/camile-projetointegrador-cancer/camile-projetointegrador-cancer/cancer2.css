@@ -8,9 +8,9 @@ body{
     background: linear-gradient(to right, #d4145a, #fbb03b);
     color: #fff;
     font-family: 'Gill Sans', 'Gill Sans MT';
-    max-width: 100%;
+    width: 100%;
   }
- 
+ @media screen and (min-width: 1030px) { .description { width: 50%; }}
 a{
     text-decoration: none;
 }
