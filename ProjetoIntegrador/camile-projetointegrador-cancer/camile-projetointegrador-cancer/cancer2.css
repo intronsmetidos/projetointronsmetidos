@@ -22,9 +22,8 @@ p{
 ul li{
     list-style: none;
     display:flex;
-    padding:15px;
+    padding:5px;
     font-size:20px;
-    width:60%;
 }
 
 img{
