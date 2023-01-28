@@ -125,7 +125,7 @@ header{
 }
 header a{
     flex-direction: column;
-    margin:25x;
+    margin:10x;
 }
 header h1, header h3{
     color: #fff;
@@ -168,8 +168,9 @@ header h1, header h3{
 }
  
 .ctn{
-    padding: 5%;
-    margin: 8px;
+    padding: 2%;
+    margin: 15px;
+    
     background: #b82207;
     border-radius: 30px;
     color:antiquewhite;
