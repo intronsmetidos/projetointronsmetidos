@@ -142,7 +142,9 @@ header h1, header h3{
     margin-bottom: 150px;
     color:antiquewhite;
     text-align: center;
-  list-style: none;
+    list-style: none;
+    margin:20px;
+    padding:10%;
 }
  
 .header-content h1{
