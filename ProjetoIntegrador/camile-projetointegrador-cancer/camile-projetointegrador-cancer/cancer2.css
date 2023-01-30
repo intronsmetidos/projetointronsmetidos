@@ -210,7 +210,8 @@ header h1, header h3{
  
 .ctn{
     padding: 10px 19px;
-    
+    margin-bottom:25px;
+    text-decoration:none;
   
     color:antiquewhite;
 }
