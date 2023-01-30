@@ -376,17 +376,12 @@ p {
 #if {
   width: 125px;
   height: 130px;
-
+  text-align:center;
 }
 .org2{ 
-  margin: 10px;
-  max-width: 100%;
+  width: 100%;
 }
 .org2 p{
   text-align:center;
-}
-.titulos {
   font-size: 18px;
-  padding:15px;
-  
 }
