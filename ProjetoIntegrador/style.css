@@ -373,18 +373,19 @@ p {
 
 }
 
-.org2 {
- padding: 50px;
-  text-align: center;
-}
-
 #if {
   width: 125px;
   height: 130px;
 
 }
-
+.org2{ 
+  margin: 10px;
+  max-width: 100%;
+}
+.org2 p{
+  text-align:center;
+}
 .titulos {
   font-size: 18px;
- 3text-align:center;
+ 
 }
