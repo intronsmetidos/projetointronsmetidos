@@ -381,7 +381,7 @@ p {
 #if {
   width: 125px;
   height: 130px;
-
+  text-align:center;
 }
 
 .titulos {
