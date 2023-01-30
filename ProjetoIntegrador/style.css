@@ -376,13 +376,12 @@ p {
 #if {
   width: 125px;
   height: 130px;
+  text-align:center;
 }
 .org2{ 
   margin:50px;
   text-align:center;
 }
-logo{
- text-align:center;}
 .titulos{
   text-align:center;
   font-size;20px;
