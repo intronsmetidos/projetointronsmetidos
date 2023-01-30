@@ -97,7 +97,7 @@ img{
     top: 0;
     left: 0;
 }
-.ctn3{ padding: 10px 19px; background: #b82207; border-radius: 30px; color:white; } 
+.ctn3{ padding: 10px 19px; background: #b82207; border-radius: 30px; color:white; margin:40px;} 
  
 .caixa{
      background-image: linear-gradient(rgba(30, 18, 4, 0.479), rgba(30, 17, 4, 0.30));
@@ -163,7 +163,7 @@ header h1, header h3{
  
 .ctn{
     padding: 10px 19px;
-    margin:30px;
+    margin:20px;
     text-align:center;
   
     color:whitesmoke;
