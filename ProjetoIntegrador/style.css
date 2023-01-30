@@ -376,12 +376,11 @@ p {
 #if {
   width: 125px;
   height: 130px;
-  text-align:center;
 }
 .org2{ 
-  width: 100%;
-}
-.org2 p{
+  margin:10px;
   text-align:center;
-  font-size: 18px;
 }
+
+ 
+ 
