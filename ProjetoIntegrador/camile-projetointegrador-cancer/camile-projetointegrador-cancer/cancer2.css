@@ -14,6 +14,7 @@ body{
  
 a{
     text-decoration: none;
+    color:inherit;
 }
 
 p{
@@ -59,11 +60,8 @@ body{
     font-family: 'Gill Sans', 'Gill Sans MT';
     max-width: 100%;
   }
- 
-a{
-    text-decoration: none;
-    color: inherit;
-}
+
+
 
 p{
     text-align: justify;
@@ -169,6 +167,7 @@ header{
 }
 header a{
     flex-direction: column;
+    color:antiwhite;
 }
 header h1, header h3{
     color: #fff;
@@ -213,7 +212,7 @@ header h1, header h3{
     padding: 10px 19px;
     margin-bottom:25px;
     text-decoration:none;
-  
+    background-color:none;
     color:antiquewhite;
 }
  
