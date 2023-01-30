@@ -14,7 +14,7 @@ body{
  
 a{
     text-decoration: none;
-    color:inherit;
+    color:antiwhite;
 }
 
 p{
@@ -167,7 +167,6 @@ header{
 }
 header a{
     flex-direction: column;
-    color:antiwhite;
 }
 header h1, header h3{
     color: #fff;
@@ -210,9 +209,7 @@ header h1, header h3{
  
 .ctn{
     padding: 10px 19px;
-    margin-bottom:25px;
     text-decoration:none;
-    background-color:none;
     color:antiquewhite;
 }
  
