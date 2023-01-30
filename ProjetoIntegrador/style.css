@@ -381,10 +381,10 @@ p {
 #if {
   width: 125px;
   height: 130px;
-  text-align:center;
+
 }
 
 .titulos {
-  text-align: center;
+  margin:50px;
   font-size: 18px;
 }
