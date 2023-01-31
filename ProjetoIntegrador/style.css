@@ -374,6 +374,7 @@ p {
 }
 .org2{ 
   display: flex; align-items: center; justify-content: center; 
+  padding:10px;
 }
 #if {
   display: block; 
