@@ -6,7 +6,8 @@
   align-items: center;
   padding:50px;
   margin:50px;
-  background: ;
+  background: white;
+  box-shadow: 0px 12px 20px -9px black;
 }
 .container2 {
   position: relative;
