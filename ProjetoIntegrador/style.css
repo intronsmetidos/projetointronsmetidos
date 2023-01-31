@@ -380,11 +380,9 @@ p {
 }
 .org2{ 
   margin:50px;
-  text-align:center;
+  justify-content: center;
 }
 .titulos{
-  width:100%;
-  text-align:justify;
   font-size;20px;
 }
  
