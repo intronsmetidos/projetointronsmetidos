@@ -4,8 +4,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding:50px;
   margin:50px;
-  background: white;
+  background: linear-gradient(to right, gray, whitesmoke, gray);
 }
 .container2 {
   position: relative;
