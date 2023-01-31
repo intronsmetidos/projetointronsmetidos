@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   margin:50px;
-  background: whitesmoke;
+  background: linear-gradient(to right,black,#87CEFA,black);
 }
 .container2 {
   position: relative;
