@@ -377,10 +377,13 @@ p {
   width: 125px;
   height: 130px;
   text-align:center;
-}
+  
+  }
+
 .org2{ 
   margin:50px;
-  justify-content: center;
+  
+  position: center;
 }
 .titulos{
   font-size;20px;
