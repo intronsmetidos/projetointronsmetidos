@@ -372,16 +372,15 @@ p {
   font-weight: 700;
 
 }
-
+.org2{ 
+  align-items:center;
+}
 #if {
   text-align:center;
   width: 125px;
   height: 130px;
   }
 
-.org2{ 
-  align-items:center;
-}
 .titulos{
   font-size;20px;}
 .titulos2{
