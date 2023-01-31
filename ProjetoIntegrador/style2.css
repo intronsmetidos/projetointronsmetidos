@@ -20,8 +20,8 @@
 }
 .container2 .box {
   position: relative;
-  width: 250px;
-  height: 250px;
+  width: 275px;
+  height: 275px;
   background: #000;
   transition: 0.5s;
   transform-style: preserve-3d;
