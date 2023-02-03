@@ -20,6 +20,6 @@
 
 
 
-  const titulo = document.querySelector('');
+  const titulo = document.querySelector('.description');
   typeWriter(titulo);
 </script>
