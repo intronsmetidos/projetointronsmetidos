@@ -19,7 +19,8 @@ header a {
 a:hover {
   background: rgba(0, 0, 0, 0.05);
 }
-
+#nav{
+  color:white;}
 #header {
   box-sizing: border-box;
   height: 70px;
