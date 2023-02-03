@@ -6,21 +6,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="style2.css">
+  <link rel="stylesheet" href="style3.css">
 
   <title>IntronsMetidos</title>
 </head>
 
 <body>
-  <!-- dados referente ao menu da página -->
-  <header>
-    <div class="container">
-      <img
-        src="./Imagens/logo-ifrn.png" alt="Logo Netflix"
-        class="logo">
-      <nav> <a href="./nucleo/index.html">Núcleo</a> <a href="#">Cromossomos</a> <a href="./divisao/index.html">Divisão</a> <a href="./camile-projetointegrador-cancer/camile-projetointegrador-cancer/cancer.html">Câncer</a> </nav>
-    </div>
-  </header> <!-- dados referente ao filme principal mostrado na página -->
-
+  <header id="header">
+    <a id="logo" href="./index.html"><img id="dna" src="./imagemnucleo/logo-ifrn.png"></a>
+    <nav id="nav">
+      <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+        aria-expanded="false">Menu
+        <span id="hamburger"></span>
+      </button>
+      <ul id="menu" role="menu">
+        <li><a href="./nucleo/index.html">Núcleo</a></li>
+        <li><a href="#">Cromossomos</a></li>
+        <li><a href="./divisao/index.html">Divisão</a></li>
+        <li><a href="./camile-projetointegrador-cancer/camile-projetointegrador-cancer/cancer.html">Câncer</a></li>
+        <li><a href="https://www.instagram.com/p/ClkFF0Nu_nI/?igshid=MDJmNzVkMjY=">Instagram</a></li>
+      </ul>
+    </nav>
+  </header>
+ 
   <main>
     <div class="main-movie">
       <div class="container">
