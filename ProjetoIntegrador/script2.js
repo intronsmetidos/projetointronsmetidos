@@ -7,7 +7,7 @@
   });
 
   typewriter
-  .typeString(descriptionText)
+  .typeString(description)
   .pauseFor(1500)
   .start();
 
