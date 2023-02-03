@@ -1,28 +1,4 @@
 
-  var appText = document.querySelector('.description');
-  var description = document.querySelector('.description').innerText;
-
-  var typewriter = new Typewriter(appText, {
-  loop: true,
-  });
-
-  typewriter
-  .typeString(description)
-  .pauseFor(1500)
-<script>
-  function typeWriter(elemento) {
-    const textoArray = elemento.innerHTML.split('');
-    elemento.innerHTML = '';
-    textoArray.forEach((letra, i) => {
-      setTimeout(() => elemento.innerHTML += letra, 75 * i);
-    });
-  }
-
-
-
-  const titulo = document.querySelector('.description');
-  typeWriter(titulo);
-</script>
 function typeWriter(elemento) {
     const textoArray = elemento.innerHTML.split('');
     elemento.innerHTML = '';
@@ -31,6 +7,14 @@ function typeWriter(elemento) {
     });
   }
 
+  // Se estiver tendo problemas com performance, utilize o FOR loop como abaixo no local do forEach
+  // function typeWriter(elemento) {
+  //   const textoArray = elemento.innerHTML.split('');
+  //   elemento.innerHTML = '';
+  //   for(let i = 0; i < textoArray.length; i++) {
+  //     setTimeout(() => elemento.innerHTML += textoArray[i], 75 * i);
+  //   }
+  // }
 
   const titulo = document.querySelector('.description');
   typeWriter(titulo);
