@@ -1,4 +1,3 @@
-  <script>
 
   var appText = document.querySelector('.description');
   var description = document.querySelector('.description').innerText;
@@ -12,4 +11,4 @@
   .pauseFor(1500)
   .start();
 
-  </script>
+ 
