@@ -104,6 +104,9 @@ a:hover {
     top: -7px;
   }
  }
+#nav button{
+  color:white;
+}
 #dna{
   width: 250px;
   height:100px;
