@@ -67,7 +67,7 @@ nav a {
 }
 
 #menu {
-    margin-top:45px;
+    margin-top:25px;
     display: flex;
     list-style: none;
     /*gap: 0.5rem;*/
@@ -216,7 +216,7 @@ section{
 }
 
 #ref{
-  padding:2;
+  padding:15px;
   font-size: 15px;
   color: #fff;
   text-align: justify;
