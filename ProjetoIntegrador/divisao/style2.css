@@ -74,7 +74,9 @@ img{
   width:125px;
   height:130px;
 }
-
+.gif{
+    width:90%;
+    height:90%;}
 .imagem2{
     max-width:100%;
     max-height:100%;
