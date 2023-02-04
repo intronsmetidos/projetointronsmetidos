@@ -85,6 +85,10 @@ img{
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
 }
+.imagem2:hover{ 
+	-webkit-transform:scale(1);
+	transform: scale(1);
+}
 img{
   background-image:flex; 
 }
