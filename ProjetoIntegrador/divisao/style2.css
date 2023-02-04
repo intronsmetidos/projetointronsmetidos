@@ -85,8 +85,8 @@ img{
     max-height:100%;
     cursor: pointer;
     text-align: center;
-  -webkit-transform: scale(1.35);
-	transform: scale(1.35);
+  -webkit-transform: scale(1.5);
+	transform: scale(1.5);
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
 }
