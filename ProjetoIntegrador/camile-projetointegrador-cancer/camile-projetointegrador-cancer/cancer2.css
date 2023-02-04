@@ -49,6 +49,7 @@ a:hover {
     align-items: center;
     justify-content: space-between;
     background: #b82207;
+    z-index:4;
 }
 
 nav a {
@@ -68,7 +69,6 @@ nav a {
 #menu {
     display: flex;
     list-style: none;
-    z-index:4;
     /*gap: 0.5rem;*/
 }
   
@@ -76,6 +76,7 @@ nav a {
     display: block;
     margin-top:45px;
     padding: 0.5rem;
+  
 }
   
 #btn-mobile {
@@ -215,7 +216,7 @@ section{
 }
 
 #ref{
-  width:80%;
+  padding:15px;
   font-size: 15px;
   color: #fff;
   text-align: justify;
