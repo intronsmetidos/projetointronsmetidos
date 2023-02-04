@@ -49,6 +49,7 @@
       align-items: center;
       justify-content: space-between;
       background: #b82207;
+      z-index:5;
   }
   
   nav a {
