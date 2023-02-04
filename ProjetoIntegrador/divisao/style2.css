@@ -9,18 +9,17 @@ p,ul {
     }
 li{
   font-size: 23px;
-}
-
-    h1{
+    }
+h1{
       padding:10px;
       font-family:Garamond;
       border-radius: 10px;
       color:navy;
-    }
-    .body {
+   }
+.body {
       margin:0 auto;
     padding:10px;}
-   #espaco{
+#espaco{
       margin-top:85px;
 }
 h2,h3{
@@ -66,7 +65,7 @@ img{
   margin:90px;
 }
 .org2{
-  margin: 50px;
+  margin: 70px;
 }
 .org2 p{
   text-align:center;
