@@ -67,7 +67,6 @@ nav a {
 }
 
 #menu {
-    margin-top:25px;
     display: flex;
     list-style: none;
     /*gap: 0.5rem;*/
