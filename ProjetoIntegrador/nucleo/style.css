@@ -196,12 +196,12 @@ img{
 
 .zoomPic {
   margin: 30px;
-  width: 300px;
-  height: 180px;
+  width: 400px;
+  height: 280px;
   background-image: url("./imagemnucleo/cromatina.jpg");
   background-repeat:no-repeat;
   background-position:50% 50%;
-  background-size: 300px 180px;
+  background-size: 400px 280px;
   
   -webkit-transition: all 2.5s ease-in-out;
   -moz-transition: all 2.5s ease-in-out;
@@ -213,6 +213,6 @@ img{
   background-size: 1200px 720px !important; 
 }
 .zoom,.pause,.zoomout{
-   padding:25px;
+   padding;15%;
    margin:10px;
 }
