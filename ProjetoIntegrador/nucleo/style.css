@@ -211,7 +211,7 @@ img{
   transition: all 2.5s ease-in-out;
 }
 .zoomPic.zoom {
-  background-size: 1200px 720px !important; 
+  background-size: 900px 620px !important; 
 }
 .zoom,.pause,.zoomout{
    padding;15%;
