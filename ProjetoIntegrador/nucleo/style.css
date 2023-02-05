@@ -212,4 +212,7 @@ img{
 .zoomPic.zoom {
   background-size: 1200px 720px !important; 
 }
-
+.zoom,.pause,.zoomout{
+   padding:25px;
+   margin:10px;
+}
