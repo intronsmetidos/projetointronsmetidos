@@ -20,18 +20,3 @@ document.getElementsByClassName('zoomout')[0].onclick = function() {
   zoomOne.style.backgroundSize = zoomOneBGSize;
 }
 
-$('.zoom:eq(1)').on('click', function() { 
-  if(!$zoomTwo.hasClass('zoom'))
-  {
-    $zoomTwo.addClass('zoom');
-  } 
-});
-$('.pause:eq(1)').on('click', function() {
-    var backgroundSize = $zoomTwo.css("background-size");
-    $zoomTwo.css({'background-size': backgroundSize});
-    $zoomTwo.removeClass('zoom');
-});
-$('.zoomout:eq(1)').on('click', function() {
-  $zoomTwo.removeClass('zoom');
-  $zoomTwo.css('background-size', zoomTwoBGSize);
-});
