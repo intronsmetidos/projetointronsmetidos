@@ -1,5 +1,3 @@
-HTML CSS JSResult Skip Results Iframe
-EDIT ON
 var zoomOne = document.getElementsByClassName('zoomPic')[0],
     zoomOneBGSize = window.getComputedStyle(zoomOne).getPropertyValue('background-size'),
     $zoomTwo = $('.zoomPic:eq(1)'),
