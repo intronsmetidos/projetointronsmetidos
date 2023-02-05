@@ -193,4 +193,8 @@ img{
   margin-top: 0 auto;
   margin-left: 0 auto;
 }
-
+.imgs{
+  width:80%;
+  height:80%;
+  text-align:center;
+  padding:10px;}
