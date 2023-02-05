@@ -43,7 +43,7 @@ p,ul {
     h1, h2 {
       padding:10px;
       border-radius: 10px;
-background: linear-gradient( to right, CornflowerBlue,SlateBlue,  DarkSlateBlue);
+      background: linear-gradient( to right, CornflowerBlue,SlateBlue,  DarkSlateBlue);
       color:whitesmoke;
     }
     
@@ -131,7 +131,7 @@ img{
   font-weight:500;
 }
 .org{
-  margin: 15%;
+  margin: 1%;
   max-width: 100%;
 }
 .org2{
