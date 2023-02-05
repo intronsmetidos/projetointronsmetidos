@@ -214,5 +214,6 @@ img{
 }
 .zoom,.pause,.zoomout{
    padding;15%;
+   width:20%;
    margin:10px;
 }
