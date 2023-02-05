@@ -198,7 +198,6 @@ img{
   margin: 30px;
   width: 300px;
   height: 180px;
-  background-color: blue;
   background-image: url("./imagemnucleo/cromatina.jpg");
   background-repeat:no-repeat;
   background-position:50% 50%;
@@ -213,3 +212,4 @@ img{
 .zoomPic.zoom {
   background-size: 1200px 720px !important; 
 }
+
