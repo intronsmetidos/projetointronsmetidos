@@ -196,4 +196,6 @@ img{
 .caixa{
   display:flex;
   padding:5%;}
-	
+.caixa img{
+  width:50%;
+  height:50%;}
