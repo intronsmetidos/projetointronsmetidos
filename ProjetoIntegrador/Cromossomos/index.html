@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo usando Flexbox</title>
+    <style>
+        body, ul {
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Arial';
+            font-size: 20px;
+            color: #4d4b49;
+            list-style: none;/*retira o marcador do item*/
+        }
+        header{
+            position:fixed;
+            width:100%;
+            z-index:5;
+        }
+        header a {
+        color: whitesmoke;
+        text-decoration: none;
+        }
+        a:hover {
+            background: rgba(0, 0, 0, 0.05);
+        }
+        #header {
+            box-sizing: border-box;
+            width: 100%;
+            height: 120px;
+            background-position: vertical top;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background: linear-gradient(to right,DarkTurquoise, #2790B0);
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+        }
+        #menu {
+            margin-top: 0 auto;
+            display: flex;
+            list-style: none;
+            gap: 0.5rem;
+        }
+        #menu a {
+            display: block;
+            padding: 0.5rem;
+            margin-top: 10px;
+        }
+        #btn-mobile {
+            display: none;
+        }
+        @media (max-width: 600px) {
+        #menu {
+            display: block;
+            position: fixed;
+            width: 100%;
+            top: 110px;
+            right: 0px;
+            background: linear-gradient(to right,DarkTurquoise, #2790B0);
+            transition: 0.6s;
+            z-index: 1000;
+            height: 0px;
+            visibility: hidden;
+            overflow-y: hidden;
+        }
+        #nav.active #menu {
+            height: calc(100vh - 70px);
+            visibility: visible;
+            overflow-y: auto;
+        }
+        #menu a {
+            padding: 1rem 0;
+            margin: 0 1rem;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+        }
+        #btn-mobile {
+            display: flex;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            border: none;
+            background: none;
+            cursor: pointer;
+            gap: 0.5rem;
+        }
+        #hamburger {
+            border-top: 2px solid;
+            width: 20px;
+        }
+        #hamburger::after, #hamburger::before {
+            content: '';
+            display: block;
+            width: 20px;
+            height: 2px;
+            background: currentColor;
+            margin-top: 5px;
+            transition: 0.3s;
+            position: relative;
+        }
+        #nav.active #hamburger {
+            border-top-color: transparent;
+        }
+        #nav.active #hamburger::before {
+            transform: rotate(135deg);
+        }
+        #nav.active #hamburger::after {    transform: rotate(-135deg);
+            top: -7px;
+        }
+    }         
+        button {
+            color:whitesmoke;
+        }
+        main {
+            margin-top:100px;
+            padding: 20px;
+        }
+        .central {
+            text-align: center;
+        }
+        .titulo-oficial {
+            font-family: 'Avenir Black';
+            font-weight: 800;
+            font-size: 30px;
+            color:#ffffff;
+            padding: 10px;
+            border-radius: 10px;
+            background-color:#94ba65;
+        }
+        .resumo-titulo {
+            color: #707070;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 19px;
+            font-weight: 700;
+            letter-spacing: .22px;
+            padding-bottom: 19px;
+            text-align: justify;
+        }
+        h1 {
+            color: #2790b0;
+            font-size: 35px;
+        }
+        h3{
+        margin-left:20px;
+        font-size:22px;
+        color: #2790B0;
+        }
+        .textotabela {
+            font-family: Arial;
+        }
+        .tittabela {
+            color: #94ba65;
+            font-family: Verdana;
+            font-size: 30px;
+            text-decoration: underline;
+        }
+        #tsi {
+            vertical-align: text-top;
+            text-align: center;
+        }
+        th {
+            padding: 25px;
+            text-align: center;
+            color: #2790B0;
+        }
+        td{
+            padding: 25px;
+        }
+        img{
+            display: block;
+            max-width: 100%;/*para melhorar o layout das imagens, pois os tamanhos não são padrão*/
+            /*para melhorar o layout das imagens, pois os tamanhos não são padrão*/
+            margin: auto;/*alinha o seletor img de forma centralizada dentro da div. Só funciona se colocar um valor para width, pois o alinhamento de uma div é "inline"*/
+        }
+        .blocoimagens{
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1024px;
+            margin: 0 auto;
+        }
+        .blocoimagens div{
+            flex: 1 1 200px;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        .titulosecao{
+            text-align: center;
+            font-size: 26px;
+            font-family: Arial;
+            color: #2790B0;
+            text-decoration: underline;
+        }
+        .colunaimpar{
+            display: flex;
+            width: 100%;
+            height: 180%;
+            justify-content: center;
+            padding: 5px;
+            flex-wrap: wrap;
+        }
+        .secaoprodutovertical{
+            margin: 15px;
+            align-items: center;
+            font-size: 20px;
+            font-family: Arial;
+            padding: 4px;
+        }
+        .secaoprodutoverticaal{
+            margin: 15px;
+            align-items: center;
+            font-size: 20px;
+            font-family: Arial;
+            padding: 4px;
+        }
+        .albumimg{
+            width: 300px;
+            height: 200px;
+            margin: 10px;
+            max-width: 1024px;
+            margin: 0 auto;
+            transition: all 0.5s;
+            cursor:pointer
+        }
+        .albumimg:hover{
+            -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+        }
+        .legendas{
+            padding: 5px;
+            text-align: center;
+            margin: 10px;
+        } 
+        #box{
+            width: 90%;
+            height: 100%;
+            background-color:#94ba65;
+            padding: 10px;
+            border-radius: 10px;
+            vertical-align: center;
+        }
+        .conceitos {
+            font-size: 20;
+        }
+        #dna{
+            width: 250px;
+            height:100px;
+            margin-top: 0 auto;
+            margin-left: 0 auto;
+        }
+        p{
+            text-align: justify;
+        }
+        #deixarpequeno {
+            font-size: 18px;
+            color: #4d4b49;
+        }
+        #centralizar2 {
+            padding: 10px;
+            border-radius: 10px;
+            background-color:#94ba65;
+            color: #ffffff;
+            text-align: center;
+            margin: 5px;
+        }
+        #centralizar {
+            padding: 5px;
+            color: #4d4b49;
+            text-align: center;
+            margin: 5px;
+        }
+        .atualizacoes{
+            font-family: PlutoSansRegularSubset;
+            padding:15px;
+            font-size:20px;
+            color:#676f77;
+        }
+        .org2{
+            margin: 10px;
+            max-width: 100%;
+        }
+        .org2 p{
+            text-align:center;
+        }
+        #if{
+            width:125px;
+            height:130px;
+        }
+        .titulos{
+            font-family: PlutoSansRegularSubset;
+            padding:15px;
+            font-size:15px;
+            color:#676f77;
+        }
+    </style>
+</head>
+<body>
+    <main>
+    <header id="header">
+        <a id="logo" href=""><img id="dna" src="https://dados.ifrn.edu.br/base/images/logo-ifrn.png"></a>
+      <nav id="nav">
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+             aria-expanded="false">
+             <span id="hamburger"></span>
+            </button>
+         <ul id="menu" role="menu">
+            <li><a href="https://intronsmetidos.github.io/projetointronsmetidos/ProjetoIntegrador/homepage.html#">Pagina Inicial</a></li>
+            <li><a href="">Vídeo-aula</a></li>
+            <li><a href="https://www.instagram.com/p/ClkFF0Nu_nI/?igshid=MDJmNzVkMjY=">Instagram</a></li>
+         </ul>
+      </nav>
+    </header>
+    <h2 class="titulo-oficial">Cromossomos</h2>
+      <p class="atualizacoes">Autor: Carlos Eduardo Ferreira de Souza
+        <br>
+        Revisor: Álvaro Hermano da Silva
+        </br>
+        Turma: 3° Info V
+        </br>
+        Última revisão: 08 de Fevereiro de 2023
+      </p>
+  <table border="solid">
+    <tr>
+        <td><p class="tittabela">Conteúdo</p>
+            <ul id="deixarpequeno">
+                <li><a href="#cromos">O que são os cromossomos?</a></li>
+                <li><a href="#relacao">Qual a relação entre DNA e cromossomo?</a></li>
+                <li><a href="#procariotic">Como são os cromossomos procarióticos?</a></li>
+                <li><a href="#eucariotic">Como são os cromossomos eucarióticos?</a></li>
+                <li><a href="#ploid">Ploidia, Homologia e Cariótipo</a></li>
+                <li><a href="#cromodiv">Cromossomos na divisão celular</a></li>
+                <li><a href="#doistipos">Cromossomos autossômicos e cromossomos sexuais </li>
+            </ul>
+        </td>
+    </tr>
+</table>
+  <br/>
+  <h1><a name="cromos">O que são os cromossomos?</a></h1> 
+  <p>Os <b>cromossomos</b> são longas sequências de DNA que contêm diversos genes e outras sequências de nucleotídeos. Em organismos eucariontes, os cromossomos são estruturas lineares de DNA dupla fita, altamente enovelado, normalmente encontradas no núcleo das células, podendo também estar associadas com proteínas e RNA. Em organismos procariontes, eles se apresentam de forma circular ou não-linear, não estando presentes no núcleo nem associados a proteínas.</p>
+  <img src="./Figuras/cromossomos.jpg">
+  <h1><a name="relacao">Qual a relação entre DNA e cromossomo?</a></h1>
+  <p>O <b>DNA (ácido desoxirribonucleico)</b> é o material genético da célula contido nos cromossomos, que, por sua vez, se encontram no núcleo e na mitocôndria da célula. Trata-se de uma <b>macromolécula composta de ácidos nucléicos quearmazena todo o material genético</b> do organismo, detendo, assim, as características do indivíduo.</p>
+  <p>Por meio do conteúdo armazenado no DNA, é possível <b>sintetizar todas as proteínas</b> necessárias para o <b>metabolismo celular</b>. A porção do DNA que contém informação para a síntese proteica recebe o nome de <b>gene</b>.</p>
+  <p>Em alguns organismos, o material genético está associado a proteínas chamadas <b>histonas</b>. Elas organizam a atividade do DNA de acordo com as especificidades da célula. Esse complexo de DNA e proteínas associadas recebe o nome de <b>cromatina</b>.</p>
+  <table border="solid">
+    <tr>
+        <th colspan="6">A diferença entre <i>cromossomo</i> e <i>cromatina</i> se dá no <b>período do ciclo celular</b> em que se encontram:</th>
+    </tr>
+    <tr>
+        <td class="conceitos"><b>Cromatina</b></td>
+        <td id="deixarpequeno">É o DNA associado ao período em que a célula não está se dividindo. Contém porções acessíveis para a maquinaria de transcrição para formação do RNA que, posteriormente, é utilizado na síntese proteica. </td>
+    </tr>
+    <tr>
+        <td class="conceitos"><b>Cromossomo</b></td>
+        <td id="deixarpequeno">É o DNA totalmente enovelado, sem porções acessíveis, o que impossibilita a transcrição e a síntese proteica. O cromossomo é o DNA durante o período de divisão celular - quando a célula não sintetiza proteínas, pois está concentrada em <b>gerar células-filhas</b>, que precisarão do seu DNA para desempenhar seus processos metabólicos de forma independente. </td>
+    </tr>
+  </table>
+  <h1><a name="procariotic">Como são os cromossomos procarióticos?</a></h1>
+  <p>Em bactérias e arqueobactérias, <u>organismos procariontes</u>, o cromossomo costuma ter <b>segmento circular</b> (não possui início ou fim definidos) e <b>unitário.</b></p>
+  <p>Algumas bactérias possuem outros segmentos de DNA complementares ao "DNA genômico". Esses cromossomos adicionais recebem o nome de <b>plasmídeos</b> e, geralmente, <b>armazenam informações proteicas</b> que conferem capacidade de resistência a <b>antibióticos</b>.</p>
+  <p>Embora seja denominado "cromossomo bacteriano", o <b>DNA procariótico</b> se difere do cromossomo eucariótico quanto à estrutura e às proteínas envolvidas na sua condensação, que são bem diferentes das histonas.</p>
+  <h1><a name="eucariotic">Como são os cromossomos eucarióticos?</a></h1>
+  <p>Nos <u>eucariontes</u>, o DNA é <b>armazenado no núcleo celular</b>, possui <b>segmento linear</b> e está distribuído em grupos diferentes de múltiplos cromossomos quando associados a proteínas de empacotamento.</p>
+  <p>Na <b>interfase</b>, período em que a célula não está se dividindo, o DNA toma a forma de cromatina com duas porções bem distintas:</p>
+    <ul id="box">
+        <li><b>Heterocromatina:</b> parte inativa do DNA e que é enovelada nas histonas. Possui genes ou trechos do DNA que não são importantes para a célula da qual ele faz parte. </li>
+        <li><b>Eucromatina:</b> parte ativa do DNA celular. Contém genes que são responsáveis pelo metabolismo da célula da qual faz parte. </li>
+    </ul>
+  <p>Um exemplo é o gene responsável pela síntese de <u>melanina</u>. A melanina é importante para as células epiteliais da <u>pele</u>. Nessas células, esse gene faz parte da eucromatina. Porém, nas células beta-pancreáticas, responsáveis pela síntese de insulina, esse gene não é importante, sendo então enovelado nas histonas e tornando-se parte da heterocromatina</p>
+  <p>Cada cromossomo possui <b>estrutura bem definida</b>, com porções que desempenham <b>funções específicas</b> que garantem o preparo do DNA para a etapa de divisão celular.</p>
+  <p>Todo cromossomo é composto por uma região de maior enovelamento do DNA, chamada de <b>centrômero</b> - ou de região de constrição primária</p>
+  <br/>
+  <section id="tiposcromossomos">
+    <p class="titulosecao" id="crom"><b>TIPOS DE CROMOSSOMOS</b></p> <br/>
+    <section class="colunaimpar">
+        <section class="secaoprodutovertical">
+            <section class="legendas">
+                <div>
+                    <p id="centralizar2">Metacêntrico</p>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <img class="albumimg"  src="./Figuras/metacentrico.png">
+                </div>
+            </section>
+            <section class="legendas">
+                <div>
+                    <p id="centralizar">Apresenta um centrômero mais ou menos central e braços de comprimentos aproximadamente iguais.</p>
+                </div>
+            </section>
+        </section>
+        <section class="secaoprodutovertical">
+            <section class="legendas">
+                <div>
+                    <p id="centralizar2">Submetacêntrico</p>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <img class="albumimg"  src="./Figuras/submetacentrico.png">
+                </div>
+            </section>
+            <section class="legendas">
+                <div>
+                    <p id="centralizar">O centrômero é excêntrico e apresenta braços de comprimento nitidamente diferentes.</p>
+                </div>
+            </section>
+        </section>
+        <section class="secaoprodutovertical">
+            <section class="legendas">
+                <div>
+                    <p id="centralizar2">Acrocêntrico</p>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <img class="albumimg"  src="./Figuras/acrocentrico.png">
+                </div>
+            </section>
+            <section class="legendas">
+                <div>
+                    <p id="centralizar">Apresenta centrômero próximo a uma extremidade. Os cromossomos acrocêntricos humanos <b>(13, 14, 15, 21, 22)</b> têm pequenas massas de cromatica conhecidas como satélites fixadas aos seus braços curtos por pedículos estreitos ou constrições secundárias.</p>
+                </div>
+            </section>
+        </section>
+        <section class="secaoprodutoverticaal">
+            <section class="legendas">
+                <div>
+                    <p id="centralizar2">Telocêntrico</p>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <img class="albumimg"  src="./Figuras/telocentrico.png">
+                </div>
+            </section>
+            <section class="legendas">
+                <div>
+                    <p id="centralizar">Apresenta o centrômero na extremidade, de modo que ocorre uma única cromátide. Não ocorre na espécie humana.</p>
+                </div>
+            </section>
+        </section>
+    </section>
+</section>
+<h1><a name="ploid">Ploidia, Homologia e Cariótipo </a></h1>
+<p>Indivíduos saudáveis da mesma espécie possuem a mesma quantidade de cromossomos, organizados de forma semelhante.</p>
+<p>Na espécie humana, por exemplo, cada indivíduo possui <b>23 cromossomos diferentes</b>. Entretanto, independentemente do indivíduo, a localidade de cada gene em um cromossomo é a mesma.</p>
+<p>Além disso, em algumas células, os cromossomos são encontrados <b>aos pares</b>, em que um é de origem paterna e outro de origem materna. Ambos, apesar de diferentes, possuem os mesmos tipos de genes. Mesmo que levem à formação de características diferentes, esses pares de cromossomos são chamados de <b>cromossomos homólogos</b>.</p>
+<p>As células onde os cromossomos são encontrados aos pares se dividem por mitose. São chamadas de <b>diploides</b> e representadas pelo <b>2n</b>.</p>
+<p>As células sexuais, conhecidas como <b>gametas</b>, são resultantes de divisões celulares por <u>meiose</u>. Possuem um cromossomo de cada tipo, sendo chamadas de <b>haploides</b> e representadas apenas por <b>n</b>.</p>
+<p>Além dos humanos, animais e vegetais também são seres que possuem essa <b>ploidia</b> nas células. Alguns vegetais ainda são triploides (3n), tetraploides (4n) e até poliploides. O conjunto de cromossomos presentes em uma célula recebe o nome de <b>cariótipo</b>.</p>
+<h1><a name="cromodiv">Cromossomos na divisão celular</a></h1>
+<p>Durante as etapas do <b>ciclo celular</b>, a célula passa por processos específicos e adquire formas correspondentes.</p>
+<p>Na etapa de <b>divisão celular</b>, os cromossomos estão altamente enovelados e prontos para se segregarem.</p>
+<p>O <b>fuso mitótico</b> oriundo dos centríolos se liga à região do centrômero e se contrai até à separação completa do cromossomo duplicado. Cada <u>molécula</u>, chamada de <b>cromátide</b>, migra para o polo oposto da célula.</p>
+<p>Na <b>meiose</b> - divisão celular em que se originam os gametas -, antes da etapa de separação das cromátides-irmãs, separam-se os cromossomos homólogos para, então, a partir de células diploides (2n), formar células haploides (n).</p>
+<h1><a name="doistipos">Cromossomos autossômicos e cromossomos sexuais </a></h1>
+<p>Os cromossomos do <b>cariótipo humano</b>, por exemplo, podem ser divididos em <b>cromossomos autossômicos</b>, que contêm a maior parte das características da espécie e estão presentes de forma semelhante em todos os indivíduos, e em <b>cromossomos sexuais</b>, contendo o gene que determina o sexo biológico (macho ou fêmea).</p>
+<p>A espécie humana possui <b>46 cromossomos</b> em suas células diploides (2n), sendo 44 cromossomos autossômicos e dois sexuais.</p>
+<p>Os cromossomos autossômicos, encontrados aos pares, são representados como XX. Os cromossomos sexuais, também encontrados aos pares, podem ser XX para determinar o sexo biológico feminino ou XY para determinar o sexo biológico masculino.</p> </br>
+   <center>  <!--videos do youtube-->
+    <iframe width="350" height="215" src="https://www.youtube.com/embed/XRmCWhgGM6k" title="YouTube video player" frameborder="0"
+     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   </center>
+<hr>  
+  <div class="org2">
+        <img id="if" src="./Figuras/Logoif2.png">
+        <p class="titulos"> © 2023 Íntrons-Metidos.
+        </br> </br>
+            Esse conteúdo foi realizado pelos anos do 3° ano de Informática Vespertino do <b>Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte | Campus - Parnamirim.</b> 
+        </br> </br>
+            Essa página foi feita pelo aluno <b>Carlos Eduardo Ferreira de Souza</b>
+        </p>
+  </div>
+</main>
+<script>
+    const btnMobile = document.getElementById('btn-mobile'); function toggleMenu(event) { if (event.type === 'touchstart') event.preventDefault(); const nav = document.getElementById('nav'); nav.classList.toggle('active'); const active = nav.classList.contains('active'); event.currentTarget.setAttribute('aria-expanded', active); if (active) { event.currentTarget.setAttribute('aria-label', 'Fechar Menu'); } else { event.currentTarget.setAttribute('aria-label', 'Abrir Menu'); } } btnMobile.addEventListener('click', toggleMenu); btnMobile.addEventListener('touchstart', toggleMenu);
+</script>
+</body>
+</html>
